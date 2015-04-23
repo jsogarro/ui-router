@@ -1,0 +1,24 @@
+<h2>{{ title }}</h2>
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Brand</td>
+            <td>Color</td>
+            <td>Size</td>
+            <td>Price</td>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr ng-repeat="sneaker in sneakers">
+            <td>{{ sneaker.name }}</td>
+            <td>{{ sneaker.brand }}</td>
+            <td>{{ sneaker.color }}</td>
+            <td>{{ sneaker.size }}</td>
+            <td>{{ sneaker.price | currency }}</td>
+        </tr>
+        
+    </tbody>
+</table>

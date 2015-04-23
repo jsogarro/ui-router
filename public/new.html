@@ -1,0 +1,8 @@
+<div class="row">
+	<div class="col-md-4" data-ng-repeat="sneaker in sneakers">
+		<img src="{{ sneaker.image }}" width="250">
+		<h4>{{ sneaker.name }}</h4>
+		<p>{{ sneaker.brand }}</p>
+		<p>{{ sneaker.price | currency }}</p>
+	</div>
+</div>
